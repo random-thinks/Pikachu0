@@ -7,6 +7,7 @@
 
 ## 参考资料
 - 引脚 https://pinout.xyz
+- pySerial库 https://pythonhosted.org/pyserial/
 
 ## 关于命名
 - `Pikachu` ~ `Pi HCHO`: 皮卡丘会竖起尾巴感觉周围的危险
