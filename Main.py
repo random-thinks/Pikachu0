@@ -9,17 +9,17 @@ DartDev.ReadOnce()
 DartDev.ReadCMD()
 DartDev.ReadOnce()
 
+
 while True:
     try:
-        print (time.localtime(time.time()))
-
+        print (time.strftime("%Y-%m-%d %H:%M:%S %A"), end='\t')
         # Get HCHO
         DartDev.ReadCMD()
         hcho = DartDev.ReadOnce()
         if hcho < 0:
             print ("Err failed to get HCHO")
         else:
-            print ('Get HCHO = %f'%hcho)
+            print (f'Get HCHO = {hcho} mg/m3 ({hcho/1.2258} ppm)')
     except Exception as ex:
         print (ex)
         continue
